@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  width: 970px;
+  margin-right: auto;
+  margin-left: auto;
+
 }
 
 .App-logo {
@@ -35,4 +39,137 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* .btn:hover {
+  background-color: view_list;
+} */
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v55/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  margin-left: 95%;
+}
+
+.price {
+  margin-right: 100px;
+  display: inline;
+  color: red;
+}
+
+.add-cart {
+  border-color: red;
+  border-radius: 10px;
+  background-color: none;
+  color: red;
+}
+.wrap{
+  position: relative;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.price-and-cart{
+  position	: absolute;
+  top: 250px;
+  left:30px;
+}
+.img{
+  width: 300px;
+}
+.color{
+  position	: absolute;
+  top: 30px;
+  left:130px;
+}
+.name{
+  position	: absolute;
+  top: 0px;
+  left:80px;
+}
+.tool {  
+  -webkit-column-count:3;  
+  -moz-column-count:3;  
+  column-count:3;  
+}
+
+
+.tool-list {  
+  display: block;  
+}
+
+.price-item {
+  margin-right: 100px;
+  display: inline;
+  color: red;
+}
+
+.add-cart-item {
+  border-color: red;
+  border-radius: 10px;
+  background-color: none;
+  color: red;
+  display: inline;
+}
+.wrap-item{
+  /* position: relative; */
+  margin-right: 5px;
+  margin-bottom: 5px;
+  display: block;
+  width: 970px;
+  text-align: left;
+  background-color: #f8f8f8;
+
+}
+.img-item{
+  width: 60px;
+  display: inline;
+}
+.price-and-cart-item{
+  display: inline;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: end;
+  margin-left: 90px;
+}
+.img-item{
+  display: inline;
+
+}
+.color-item{
+  display: inline;
+  margin-left: 100px;
+
+}
+.name-item{
+  display: inline;
+margin-left: 100px;
+/* margin-bottom: 50px; */
+/* vertical-align: top; */
+}
+.price-item{
+  margin-left: 100px;
+
+}
+.add-cart-item{
+margin-left: 100px;
+/* text-align: end; */
 }
