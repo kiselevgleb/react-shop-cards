@@ -35,35 +35,30 @@ function Store() {
     color: "green",
     img: "https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/events-state/layouts/img/5.jpg"
   }];
-  const [state, setState] = useState("view_module");
+  const [viewMode, setViewMode] = useState("view_module");
   const [card, setCard] = useState(products);
   const [item, setItem] = useState([]);
 
-  const onSwitch = (e) => {
-    // let card = products;
-    // let item = [];
-    switch (e.currentTarget.innerText) {
+  const onSwitch = (viewMode) => {
+    switch (viewMode) {
       case "view_list":
-        setState("view_module");
+        setViewMode("view_module");
         setCard(products);
         setItem([]);
         break;
       case "view_module":
-        setState("view_list");
+        setViewMode("view_list");
         setCard([]);
         setItem(products);
         break;
     }
-    // setState(e.currentTarget.innerText)
-    // console.log(e.currentTarget.innerText)
   }
   return (
     <div className="App">
-      <IconSwitch icon={state} onSwitch={onSwitch} />
+      <IconSwitch icon={viewMode} onSwitch={() => onSwitch(viewMode)} />
       <CardsView cards={card} />
       <ListView items={item} />
     </div>
   );
 }
-
 export default Store;
